@@ -3,10 +3,11 @@ import { useDispatch } from 'react-redux';
 import { addItemToCart } from './CartSlice';
 import './ProductList.css'; 
 
-const dispatch = useDispatch();
-const [disabledProducts, setDisabledProducts] = useState([]);
 
 const ProductList = () => {
+    const dispatch = useDispatch();
+    const [disabledProducts, setDisabledProducts] = useState([]);
+
 
   const products = [
     { id: 1, name: 'Product A', price: 60 },
